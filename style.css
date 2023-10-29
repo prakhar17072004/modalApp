@@ -1,0 +1,48 @@
+.color{
+  background: linear-gradient(50deg,#197186,#080241);
+}
+
+
+.modal{
+    scale:0;
+    transition: 0.5s ease-in-out;
+}
+
+.active{
+    scale:1;
+}
+.overlay{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    pointer-events: none;
+}
+ .overlayactive{
+    opacity: 1;
+    pointer-events: initial;
+ }
+ .circle1 {
+     background: transparent;
+    box-shadow: 0 0 50px #d84869;
+    background: linear-gradient(-25deg, #d84869, #f46641);
+    animation: circle1Animate 15s infinite;
+  }
+  
+  @keyframes circle1Animate {
+    50% {
+      
+    
+      scale:1.11 ;
+    }
+  }
+  
+  .circle2 {
+    box-shadow: 0 0 50px #5648d8;
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+    animation: circle2Animate 8s infinite;
+  }
+  @keyframes circle2Animate {
+    50% {
+    
+        scale: 1.11;
+    }
+  }

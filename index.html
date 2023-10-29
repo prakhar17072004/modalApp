@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"  href="style.css" />
+    <title>Modal App</title>
+</head>
+<body class="color ">
+
+<div class="wrapper  w-[100vw] h-[80vh] mt-[200px]  relative  ">
+   <div class="">
+    <div class="circle1 bg-[orange] w-[150px] h-[150px]  ml-[520px]  rounded-full  absolute -mt-[90px]" ></div>
+    <div class="circle2 bg-[purple] w-[150px] h-[150px] absolute ml-[910px]  mt-[420px]  rounded-full  absolute"></div>
+
+    <div class="flex flex-col  items-center justify-center mx-auto bg-slate-900 w-[400px] h-[500px] text-white  relative  border  bg-transparent rounded-[12px]">
+        <div class="flex-col">
+            <img src="./pic.jpeg" alt="" class="w-[200px] h-[200px] rounded-full">
+
+        </div>
+        <div class=" pt-9">
+            <h3 class="text-red ">PRAKHHAR MISHRA</h3>
+        </div>
+        <div class="pt-5"> <h4>UX/UI Developer</h4></div>
+        <div class="pt-4 group">
+            <button class="border border-white p-3 hover:scale-10px hover:bg-black hover:text-white origin-left-right transition-smooth " onclick="openModal()">
+                <i class="fa-solid fa-share"></i>
+                Share My Profile</button>
+            <button class="border border-white  ml-2 p-3 hover:bg-black hover:text-white origin-left-right">
+                <a target="_blank" href="https://www.linkedin.com/in/prakharmishra41/">Follow me</a>
+            </button>
+        </div>
+    </div>
+
+</div>
+<!--Modal Component-->
+<div class="modal text-center  bg-black mx-auto border border-[2px] border-black  w-[500px] h-[250px] rounded rounded-[12px] text-white  absolute -mt-[300px] ml-[520px] opacity-1">
+    <div class=" justify-between flex  p-4 ">
+        <h1>Share My Profile</h1>
+        
+        <div>
+            <i onclick="closeModal()" class="fa-solid fa-xmark close  cursor-pointer"></i>
+        </div>
+        
+    </div>
+    <div class="h-1 w-[90%] mx-auto bg-slate-300"></div>
+
+
+    <div class="flex  flex-col m-4" >
+        <h3 class=" m-4">Share me via</h3>
+    
+        <div class="m-4 justify-between flex ">
+           <a href="#" class="icon text-[#1771e6] hover:bg-[#1771e6] hover:text-[#fff] border-[1px] border-[#1771e6] rounded-full w-[40px]  h-[40px] justify-center items-center  flex">
+            <i class="fa-brands fa-facebook-f  "></i>
+           </a>
+           <a href="#" class="icon text-[#1c99e6] hover:bg-[#1c99e6] hover:text-[#fff] border-[1px] border-[#1c99e6] rounded-full w-[40px] justify-center items-center  flex">
+            <i class="fa-brands fa-twitter"></i>
+           </a>
+           <a href="#" class="icon text-[#cb2770] hover:bg-[#cb2770] hover:text-[#fff] border-[1px] border-[#cb2770] rounded-full w-[40px] justify-center items-center  flex">
+            <i class="fa-brands fa-instagram"></i>
+           </a>
+           <a href="#" class="icon text-[#2fe664] hover:bg-[#2fe664] hover:text-[#fff] border-[1px] border-[#2fe664] rounded-full w-[40px] justify-center items-center  flex">
+            <i class="fa-brands fa-whatsapp"></i>
+           </a>
+           <a href="#" class="icon text-[#0081c2] hover:bg-[#0081c2] hover:text-[#fff] border-[1px] border-[#0081c2] rounded-full w-[40px] justify-center items-center  flex">
+            <i class="fa-brands fa-telegram"></i>
+           </a>
+        </div>
+    </div>
+
+
+</div>
+
+<!--overlay-->
+<div class="overlay cursor-pointer" onclick="closeModal()"></div>
+
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
